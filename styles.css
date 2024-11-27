@@ -1,112 +1,209 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
-}
-
+/* Body */
 header {
-    background-color: #b22222;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    z-index: 1000;
+    background: linear-gradient(135deg, #ff6f61, #ffcc5c); /* Gradiente moderno */
+    color: white; /* Texto claro */
+    padding: 50px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    margin: 0;
-    font-size: 2.5rem;
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
 }
 
-p {
-    font-size: 1.1rem;
+header p {
+    font-size: 1.25rem;
+    color: white;
+    line-height: 1.6;
 }
 
+header .btn-custom {
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header .btn-custom:hover {
+    background-color: #ffcc5c;
+    color: white;
+    transform: translateY(-5px);
+}
+
+body {
+    padding-top: 60px;
+    background-color: #EFEFEF; /* Neutro */
+    font-family: Arial, sans-serif;
+    color: #4B4B4B; /* Texto secundário */
+}
+
+/* Hero Section */
 .hero {
-    background-image: url('https://example.com/violence-background.jpg');
+    background: url('img/freepik.jpg') no-repeat center;
     background-size: cover;
-    background-position: center;
-    color: #fff;
-    padding: 50px 20px;
+    max-width: 1920px;
+    max-height: 1080px;
+    aspect-ratio: 1920 / 1080;
+    margin: 0 auto;
     text-align: center;
-}
-
-.hero-text {
-    background-color: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding: 20px;
-    border-radius: 10px;
+    color: #6A4C93; /* Texto principal */
 }
 
 .hero h2 {
-    font-size: 2rem;
-}
-
-.cta-button {
-    background-color: #b22222;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+    font-size: 3rem;
     font-weight: bold;
+    color: #6A4C93; /* Texto principal */
 }
 
-.cta-button:hover {
-    background-color: #8b0000;
-}
-
-section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin: 10px 0;
+.hero p {
     font-size: 1.2rem;
+    color: #4B4B4B; /* Texto secundário */
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+.hero .btn {
+    background-color: #F4CCCC; /* Primária */
+    border: none;
+    color: #6A4C93; /* Texto principal */
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #D9B2D8; /* Secundária */
+    color: #FFF; /* Contraste ao hover */
+}
+
+/* Header */
+header {
+    z-index: 1000;
+    background-color: #F4CCCC; /* Primária */
+    color: #6A4C93; /* Texto principal */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Features Section */
+#features .card {
+    background-color: transparent;
     text-align: center;
+    border: none;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
+#features .icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
 }
 
-footer a:hover {
-    text-decoration: underline;
+#features .card-title {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #6A4C93; /* Texto principal */
 }
 
-.image-container {
-    text-align: center; /* Centraliza o conteúdo dentro do container */
+#features .card-text {
+    color: #4B4B4B; /* Texto secundário */
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Pontos de Apoio Section */
+#pontos-de-apoio {
+    background-color: #F4CCCC; /* Primária */
+    font-family: Arial, sans-serif;
+    color: #4B4B4B; /* Texto secundário */
+    padding: 20px;
+}
+
+#pontos-de-apoio h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #6A4C93; /* Texto principal */
+}
+
+#pontos-de-apoio p {
+    line-height: 1.6;
+}
+
+/* Form Styles */
+#cepForm input {
+    max-width: 300px;
+    border: 1px solid #D9B2D8; /* Secundária */
+    padding: 8px;
+    border-radius: 5px;
+    color: #4B4B4B; /* Texto secundário */
+}
+
+/* iFrame */
+iframe {
+    border-radius: 8px;
+}
+
+/* CEP Section */
+#cep {
+    text-align: center;
+    font-size: 1rem;
+    color: #6A4C93; /* Texto principal */
+}
+
+#resultado ul {
     margin-top: 20px;
 }
 
-.image-container img {
-    width: 80%; /* Define a largura da imagem para 80% da largura da tela */
-    max-width: 800px; /* Define uma largura máxima para a imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
+/* Footer */
+footer {
+    background-color: #D9B2D8; /* Secundária */
+    color: #4B4B4B; /* Texto secundário */
+    text-align: center;
+    padding: 10px;
 }
 
-.image-container-ciclo {
-    text-align: center; /* Centraliza o conteúdo dentro do container */
-    margin-top: 20px;
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
 }
 
-.image-container-ciclo img {
-    width: 80%; /* Define a largura da imagem para 80% da largura da tela */
-    max-width: 800px; /* Define uma largura máxima para a imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
+/* New CSS for the Contact Section */
+#contato {
+    background-color: #F7F7F7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contato h2 {
+    font-size: 2.5rem;
+    color: #6A4C93;
+    font-weight: 700;
+}
+
+#contato .form-control {
+    border-radius: 10px;
+    border: 1px solid #D9B2D8;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+#contato .form-control-lg {
+    font-size: 1.1rem;
+}
+
+button[type="submit"] {
+    background-color: #6A4C93;
+    color: white;
+    border-radius: 25px;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #D9B2D8;
+    transform: translateY(-2px);
 }
